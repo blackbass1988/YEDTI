@@ -1,0 +1,17 @@
+YEDTI (YetEasyDovecotTelnetIntegrator) 0.1
+
+application provides a simple management interface through a telnet Dovecot
+in the project you will find a general class of interaction with the server, as well as download module extensions via plug-ins.
+The plugin is a file in the plugins. all plug-ins are automatically loaded when the server (no reboot is required after adding a new plug-in).
+The composition of the library:
+MailIntegrator.py - the main application class
+server.py - Class server with automatic loading of plugins
+run_server.sh - an example of running the server
+config.ini - the configuration file
+plugins / * - ready-made examples and plugins
+prereq / * - a library of interaction with mssql (retracts in the future, as is currently the heritage and sharpened by a task to which the application was written)
+
+
+LEGACY:
+library is used to connect to mssql, encryption - SHA
+
